@@ -10,15 +10,15 @@ let zeroNumber = 0;//
 let evenNumber = 0;// Задаем переменные
 let oddNumber = 0;//
 for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === 0) {
+    if (arr[i] === 0) {// считаем нули
         zeroNumber += 1;
     } else if (typeof (arr[i]) !== 'number' || typeof (arr[i]) === 'NaN') {// Ищем все, что не соответствует number
         console.log(`${arr[i]} -  это не число`);
     } else if (isNaN(arr[i]) === true) {// Так как NaN это number, вычисляем его!! 
         console.log(`${arr[i]} -  это не число`);
-    } else if (arr[i] % 2 === 0) {
+    } else if (arr[i] % 2 === 0) {// считаем четные числа
         evenNumber += 1;
-    } else {
+    } else {// считаем соответственно нечетные числа
         oddNumber += 1;
     }
 }
